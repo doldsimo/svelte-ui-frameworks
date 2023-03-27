@@ -64,4 +64,4 @@
     that the frameworks can be better compared with each other.
 </p>
 
-<button on:click={() => goto("/route")}>UI-Framework comparison</button>
+<button on:click={() => goto("/ui-framework-comparison")}>UI-Framework comparison</button>

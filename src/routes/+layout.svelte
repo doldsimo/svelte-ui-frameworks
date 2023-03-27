@@ -26,5 +26,5 @@
 <!-- slot is standing for rendering the page content -->
 <slot />
 
-<Footer/>
+<!-- <Footer/> -->
 
