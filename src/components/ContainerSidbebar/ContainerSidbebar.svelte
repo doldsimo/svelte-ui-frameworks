@@ -23,7 +23,7 @@
             on:keydown={showHideMenue}
             style="cursor: pointer;"
         />
-        <p>Menu for navigation</p>
+        <p>Navigation</p>
         <nav>
             {#each nav as item}
                 <ul>

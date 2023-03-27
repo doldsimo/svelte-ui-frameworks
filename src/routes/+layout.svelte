@@ -6,8 +6,8 @@
     let showSidebar = false;
     const nav = [
         {title: "Home", path:"/"},
+        {title: "UI-Framework comparison", path:"/ui-framework-comparison"},
         {title: "About", path:"/about"},
-        {title: "Contact", path:"/contact"}
     ]
 
     function showHideMenue() {
