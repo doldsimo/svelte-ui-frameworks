@@ -1,19 +1,24 @@
 <script>
+// @ts-nocheck
+
     // This is done in a single file for clarity. A more factored version here: https://svelte.dev/repl/288f827275db4054b23c437a572234f6?version=3.38.2
     import { flip } from "svelte/animate";
     import { dndzone } from "svelte-dnd-action";
 
     import TestComponent from "../TestComponent/TestComponent.svelte";
+    import SvelteMaterialUi from "../Frameworks/SvelteMaterialUI/SvelteMaterialUI.svelte";
+    import SvelteStrap from "../Frameworks/SvelteStrap/SvelteStrap.svelte";
+    import SvelteUI from "../Frameworks/SvelteUI/SvelteUI.svelte";
     let columnItems = [
         {
             id: 1,
             name: "Svelte Material UI",
-            component: TestComponent,
+            component: SvelteMaterialUi,
         },
         {
             id: 2,
             name: "Svelte UI",
-            component: TestComponent,
+            component: SvelteUI,
         },
         {
             id: 3,
@@ -28,7 +33,7 @@
         {
             id: 5,
             name: "Sveltestrap",
-            component: TestComponent,
+            component: SvelteStrap,
         },
         {
             id: 6,
@@ -50,12 +55,8 @@
             name: "Agnosticui",
             component: TestComponent,
         },
-        // {
-        //     id: 10,
-        //     name: "DONE",
-        //     component: TestComponent,
-        // },
     ];
+
     const flipDurationMs = 200;
     function handleDndConsiderColumns(e) {
         columnItems = e.detail.items;
@@ -71,6 +72,7 @@
     on:consider={handleDndConsiderColumns}
     on:finalize={handleDndFinalizeColumns}
 >
+    
     {#each columnItems as column (column.id)}
         <div class="column" animate:flip={{ duration: flipDurationMs }}>
             <div class="column-title">
@@ -87,6 +89,7 @@
         </div>
     {/each}
 </section>
+
 
 <style>
     .board {
@@ -108,6 +111,7 @@
         border: 1px solid #333333;
         /*Notice we make sure this container doesn't scroll so that the title stays on top and the dndzone inside is scrollable*/
         overflow-y: hidden;
+        background-color: white;
     }
     .column-content {
         cursor: default;

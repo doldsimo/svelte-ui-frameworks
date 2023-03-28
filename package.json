@@ -10,9 +10,11 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch"
 	},
 	"devDependencies": {
+		"@smui/button": "^7.0.0-beta.0",
 		"@sveltejs/adapter-auto": "^1.0.0-next.90",
 		"@sveltejs/kit": "^1.0.0-next.587",
 		"svelte": "^3.57.0",
+		"svelte-awesome-color-picker": "^2.4.1",
 		"svelte-check": "^2.9.2",
 		"svelte-dnd-action": "^0.9.22",
 		"typescript": "^4.9.3",
@@ -20,6 +22,8 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@svelteuidev/composables": "^0.10.0",
+		"@svelteuidev/core": "^0.10.0",
 		"iconify-icon": "^1.0.7",
 		"sveltestrap": "^5.10.0"
 	}
