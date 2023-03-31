@@ -1,30 +1,33 @@
 <script>
     import ContainerSidbebar from "../components/ContainerSidbebar/ContainerSidbebar.svelte";
     import Footer from "../components/Footer/Footer.svelte";
-    import 'iconify-icon';
+    import "iconify-icon";
 
     let showSidebar = false;
     const nav = [
-        {title: "Home", path:"/"},
-        {title: "UI-Framework comparison", path:"/ui-framework-comparison"},
-        {title: "About", path:"/about"},
-    ]
+        { title: "Home", path: "/" },
+        { title: "Component comparison", path: "/component-comparison" },
+        { title: "Live example", path: "/live-example" },
+        { title: "About", path: "/about" },
+    ];
 
     function showHideMenue() {
         showSidebar = !showSidebar;
         console.log(showSidebar);
     }
-
-
 </script>
 
-<iconify-icon icon="mdi:menu" on:click={showHideMenue} on:keydown={showHideMenue} style="cursor: pointer;"></iconify-icon>
+<iconify-icon
+    icon="mdi:menu"
+    on:click={showHideMenue}
+    on:keydown={showHideMenue}
+    style="cursor: pointer; font-size: 1.7em"
+/>
 
-<ContainerSidbebar showSidebar={showSidebar} showHideMenue={showHideMenue} nav={nav}/>
+<main class="main-content">
+    <ContainerSidbebar {showSidebar} {showHideMenue} {nav} />
 
-
-<!-- slot is standing for rendering the page content -->
-<slot />
-
+    <!-- slot is standing for rendering the page content -->
+    <slot />
+</main>
 <!-- <Footer/> -->
-

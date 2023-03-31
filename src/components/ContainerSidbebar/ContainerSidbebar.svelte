@@ -21,9 +21,9 @@
             icon="mdi:close"
             on:click={showHideMenue}
             on:keydown={showHideMenue}
-            style="cursor: pointer;"
+            style="cursor: pointer; font-size: 1.7em"
         />
-        <p>Navigation</p>
+        <!-- <p>Navigation</p> -->
         <nav>
             {#each nav as item}
                 <ul>
@@ -41,6 +41,13 @@
 </div>
 
 <style>
+    a {
+        color: black;
+    }
+    a:hover {
+        color: black;
+        text-decoration: none;
+    }
     /* For showing/hiding Sidebar */
     .side-drawer {
         z-index: 0;
@@ -51,7 +58,7 @@
         left: 0;
         top: 0;
         z-index: 200;
-        background-color: rgb(197, 197, 197);
+        background-color: rgb(240, 240, 240);
         padding: 16px 16px;
         box-sizing: border-box;
         transition: transform 0.3 ease-out;
@@ -98,11 +105,9 @@
         margin-right: 1em;
         font-weight: bold;
     }
-    li:hover {
-        text-decoration: underline;
-    }
-
     .active {
         text-decoration: underline;
+        color: blue;
+        text-decoration: none;
     }
 </style>
