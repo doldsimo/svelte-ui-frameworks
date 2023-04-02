@@ -9,6 +9,7 @@
     import SvelteMaterialUi from "../Frameworks/SvelteMaterialUI/SvelteMaterialUI.svelte";
     import SvelteStrap from "../Frameworks/SvelteStrap/SvelteStrap.svelte";
     import SvelteUI from "../Frameworks/SvelteUI/SvelteUI.svelte";
+    import HeadlessUI from "../Frameworks/HeadlessUI/HeadlessUI.svelte";
     let columnItems = [
         {
             id: 1,
@@ -23,7 +24,7 @@
         {
             id: 3,
             name: "Headless UI",
-            component: TestComponent,
+            component: HeadlessUI,
         },
         {
             id: 4,
