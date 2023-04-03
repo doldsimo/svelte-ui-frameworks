@@ -2,3 +2,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* Styles for ui-framework-comparison */
+
+
+.container-ui-comparison {
+    display: flex;
+    justify-content: space-around;
+}
+.sub-container-button {
+    display: flex;
+    height: 5em;
+    align-items: center !important;
+    /* background-color: red; */
+}

@@ -17,4 +17,12 @@
     });
 </script>
 
-<Button mode="primary"  style={"background-color:" + colorP + "; color:" + colorS}>Test</Button>
+<div class="container-ui-comparison">
+    <div class="sub-container-button">
+        <Button
+            mode="primary"
+            style={"background-color:" + colorP + "; color:" + colorS}
+            >Click me</Button
+        >
+    </div>
+</div>

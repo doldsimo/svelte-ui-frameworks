@@ -1,1 +1,1 @@
-<div>Testcomponent</div>
+<div> <button>test</button></div>

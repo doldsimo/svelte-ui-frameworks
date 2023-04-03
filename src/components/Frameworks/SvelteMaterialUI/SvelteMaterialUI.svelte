@@ -23,7 +23,14 @@
     href="https://cdn.jsdelivr.net/npm/svelte-material-ui@6.0.0/bare.min.css"
 />
 
-<Button
-    variant="raised"
-    style={"background-color:" + colorP + "; color:" + colorS}>Test</Button
->
+<div class="container-ui-comparison">
+    <div class="sub-container-button">
+        <Button
+            class="elements"
+            variant="raised"
+            style={"background-color:" + colorP + "; color:" + colorS}
+            >Click me</Button
+        >
+    </div>
+</div>
+

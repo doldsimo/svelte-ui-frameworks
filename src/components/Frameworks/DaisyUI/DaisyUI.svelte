@@ -14,11 +14,15 @@
     });
 </script>
 
-
-
-<button class="btn" style={"background-color:" + colorP + "; color:" + colorS}>Button</button>
-
-
+<div class="container-ui-comparison">
+    <div class="sub-container-button">
+        <button
+            class="btn"
+            style={"background-color:" + colorP + "; color:" + colorS}
+            >Click me</button
+        >
+    </div>
+</div>
 
 <!-- styles must be added to component which is using tailwind classes -->
 <!-- <style global lang="postcss">
