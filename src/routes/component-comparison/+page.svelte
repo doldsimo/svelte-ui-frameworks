@@ -7,9 +7,9 @@
     import { Title, Text } from "@svelteuidev/core";
 
     // Color for primary
-    let rgb = { r: 0, g: 232, b: 0 }; // example initial value
+    let rgb = { r: 34, g: 139, b: 230 }; // example initial value
     // Color for secondary
-    let hex = "#ed8282";
+    let hex = "#ffffff";
 
     function getHexColor(rgb) {
         return (
