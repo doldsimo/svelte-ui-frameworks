@@ -1,6 +1,5 @@
 <script>
     // @ts-nocheck
-    import "agnostic-svelte/css/common.min.css";
     import { Button } from "agnostic-svelte";
 
     import { primaryColor, secondaryColor } from "../../../store/stores";

@@ -98,7 +98,8 @@
 <style>
     .board {
         white-space: nowrap;
-        height: 90vh;
+        min-height: 240em;
+        /* height: 140vh; */
         /* this width is for scrollable x-axis */
         width: 285em;
         padding: 0.5em;

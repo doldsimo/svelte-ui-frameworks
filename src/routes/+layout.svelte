@@ -3,6 +3,7 @@
     import Footer from "../components/Footer/Footer.svelte";
     import "iconify-icon";
     import "../app.css";
+    // import "agnostic-svelte/css/common.min.css";
 
     let showSidebar = false;
     const nav = [
