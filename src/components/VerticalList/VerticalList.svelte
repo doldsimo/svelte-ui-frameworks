@@ -10,6 +10,7 @@
     import SvelteStrap from "../Frameworks/SvelteStrap/SvelteStrap.svelte";
     import SvelteUI from "../Frameworks/SvelteUI/SvelteUI.svelte";
     import HeadlessUI from "../Frameworks/HeadlessUI/HeadlessUI.svelte";
+    import DaisyUI from "../Frameworks/DaisyUI/DaisyUI.svelte";
     let columnItems = [
         {
             id: 1,
@@ -29,7 +30,7 @@
         {
             id: 4,
             name: "Daisyui",
-            component: TestComponent,
+            component: DaisyUI,
         },
         {
             id: 5,

@@ -86,6 +86,7 @@
             Component comparison</Button
         >
     </div>
+
 </Container>
 
 <style>
