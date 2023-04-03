@@ -2,6 +2,7 @@
     import ContainerSidbebar from "../components/ContainerSidbebar/ContainerSidbebar.svelte";
     import Footer from "../components/Footer/Footer.svelte";
     import "iconify-icon";
+    import "../app.css";
 
     let showSidebar = false;
     const nav = [

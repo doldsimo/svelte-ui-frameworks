@@ -11,6 +11,8 @@
     import SvelteUI from "../Frameworks/SvelteUI/SvelteUI.svelte";
     import HeadlessUI from "../Frameworks/HeadlessUI/HeadlessUI.svelte";
     import DaisyUI from "../Frameworks/DaisyUI/DaisyUI.svelte";
+    import CarbonComponents from "../Frameworks/CarbonComponents/CarbonComponents.svelte";
+    import AgnosticUI from "../Frameworks/AgnosticUI/AgnosticUI.svelte";
     let columnItems = [
         {
             id: 1,
@@ -37,25 +39,25 @@
             name: "Sveltestrap",
             component: SvelteStrap,
         },
-        {
-            id: 6,
-            name: "Attractions",
-            component: TestComponent,
-        },
-        {
-            id: 7,
-            name: "Smelter",
-            component: TestComponent,
-        },
+        // {
+        //     id: 6,
+        //     name: "Attractions",
+        //     component: TestComponent,
+        // },
+        // {
+        //     id: 7,
+        //     name: "Smelter",
+        //     component: TestComponent,
+        // },
         {
             id: 8,
             name: "Carbon Components",
-            component: TestComponent,
+            component: CarbonComponents,
         },
         {
             id: 9,
-            name: "Agnosticui",
-            component: TestComponent,
+            name: "AgnosticUI",
+            component: AgnosticUI,
         },
     ];
 

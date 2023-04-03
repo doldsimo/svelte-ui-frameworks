@@ -3,15 +3,17 @@
     // import '../../../app.css';
 </script>
 
-<Dialog/>
+<!-- <Dialog/> -->
 
-<h1 class="text-3xl font-bold underline">Test Heading</h1>
+<button class="btn">Test</button>
+
+<!-- <h1 class="text-3xl font-bold underline">Test Heading</h1> -->
 
 
 
 <!-- styles must be added to component which is using tailwind classes -->
-<style global lang="postcss">
+<!-- <style global lang="postcss">
     @tailwind base;
     @tailwind components;
     @tailwind utilities;
-</style> 
+</style>  -->

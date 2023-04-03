@@ -1,5 +1,8 @@
 <script>
     // @ts-nocheck
+    import "carbon-components-svelte/css/white.css";
+    import { Button } from "carbon-components-svelte";
+
     import { primaryColor, secondaryColor } from "../../../store/stores";
 
     let colorP;
@@ -14,15 +17,6 @@
     });
 </script>
 
-
-
-<button class="btn" style={"background-color:" + colorP + "; color:" + colorS}>Button</button>
-
-
-
-<!-- styles must be added to component which is using tailwind classes -->
-<!-- <style global lang="postcss">
-    @tailwind base;
-    @tailwind components;
-    @tailwind utilities;
-</style>  -->
+<Button style={"background-color:" + colorP + "; color:" + colorS}
+    >Primary button</Button
+>
