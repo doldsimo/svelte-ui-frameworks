@@ -98,13 +98,14 @@
 <style>
     .board {
         white-space: nowrap;
-        min-height: 240em;
+        min-height: 42em;
         /* height: 140vh; */
         /* this width is for scrollable x-axis */
         width: 285em;
         padding: 0.5em;
         margin-bottom: 40px;
     }
+
     .column {
         position: relative;
         cursor: default;

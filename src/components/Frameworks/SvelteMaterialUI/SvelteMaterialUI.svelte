@@ -17,7 +17,7 @@
     } from "@smui-extra/accordion";
     import List, { Item, Separator, Text as TextList } from "@smui/list";
     import Textfield from "@smui/textfield";
-    import HelperText from "@smui/textfield/helper-text";
+    // import HelperText from "@smui/textfield/helper-text";
 
     import { primaryColor, secondaryColor } from "../../../store/stores";
 
@@ -35,7 +35,7 @@
     // Helper variables for Components
     let checked1 = false;
     let onoff = "On";
-    let choices = ["Morning", "Afternoon", "Evening", "Night"];
+    let choices = ["Morning", "Afternoon", "Evening"];
     let selected = "Morning";
     let segment = ["One", "Two", "Three"];
     let segmentSel = "One";
@@ -104,7 +104,7 @@
             aria-describedby="simple-content"
         >
             <!-- Title cannot contain leading whitespace due to mdc-typography-baseline-top() -->
-            <Title id="simple-title">Dialog Title</Title>
+            <Title id="simple-title">Modal Title</Title>
             <Content id="simple-content"
                 >Hello from Svelte Material UI Dialog</Content
             >
@@ -119,8 +119,11 @@
         </Dialog>
 
         <Button on:click={() => (open = true)}>
-            <Label>Open Dialog</Label>
+            <Label>Open Modal</Label>
         </Button>
+    </div>
+    <div class="sub-container-button">
+        <Textfield variant="outlined" bind:value={valueA} label="Your email" />
     </div>
     <div
         class="sub-container-button"
@@ -172,21 +175,18 @@
     >
         <List style="width: 100%">
             <Item on:SMUI:action={() => (clicked = "Cut")}
-                ><TextList>Cut</TextList></Item
+                ><TextList>List Element 0</TextList></Item
             >
             <Item on:SMUI:action={() => (clicked = "Copy")}
-                ><TextList>Copy</TextList></Item
+                ><TextList>List Element 1</TextList></Item
             >
             <Item on:SMUI:action={() => (clicked = "Paste")}
-                ><TextList>Paste</TextList></Item
+                ><TextList>List Element 2</TextList></Item
             >
             <Separator />
             <Item on:SMUI:action={() => (clicked = "Delete")}
-                ><TextList>Delete</TextList></Item
+                ><TextList>List Element 3</TextList></Item
             >
         </List>
-    </div>
-    <div class="sub-container-button">
-        <Textfield variant="outlined" bind:value={valueA} label="Label" />
     </div>
 </div>
