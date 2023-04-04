@@ -34,15 +34,16 @@
 </script>
 
 <div class="header-container">
-    <Title order={1} weight={"bold"} root="h1" style="margin: .2em">UI-Framework comparison</Title>
+    <Title order={1} weight={"bold"} root="h1" style="margin: .2em"
+        >UI-Framework comparison</Title
+    >
 
     <div style="margin-right: 5em; display: flex">
-
         <div>
             <Text>{getHexColor(rgb)}</Text>
             <ColorPicker bind:rgb label={"Primary"} isAlpha={false} />
         </div>
-      
+
         <div>
             <Text>{hex}</Text>
             <ColorPicker bind:hex label={"Secondary"} isAlpha={false} />
