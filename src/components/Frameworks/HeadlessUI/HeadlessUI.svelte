@@ -1,6 +1,7 @@
 <script>
     // @ts-nocheck
     import Dialog from "./Dialog/Dialog.svelte";
+    import { Switch } from "@rgossiaux/svelte-headlessui";
     import { primaryColor, secondaryColor } from "../../../store/stores";
 
     let colorP;
@@ -13,9 +14,11 @@
     secondaryColor.subscribe((color) => {
         colorS = color;
     });
+
+    // Helper variables for Components
+    let enabled = false;
 </script>
 
-<!-- <Dialog/> -->
 <div class="container-ui-comparison">
     <div class="sub-container-button">
         <button
@@ -24,13 +27,71 @@
             >Click me</button
         >
     </div>
+    <div class="sub-container-button">
+        <Switch
+            checked={enabled}
+            on:change={(e) => (enabled = e.detail)}
+            class={enabled ? "switch switch-enabled" : "switch switch-disabled"}
+        >
+            <span class="sr-only">Enable notifications</span>
+            <span
+                class="toggle"
+                class:toggle-on={enabled}
+                class:toggle-off={!enabled}
+            />
+        </Switch>
+    </div>
+
+    <div class="sub-container-button">
+        <Dialog />
+    </div>
 </div>
 
-<!-- <h1 class="text-3xl font-bold underline">Test Heading</h1> -->
+<style>
+    :global(.switch) {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        border-radius: 9999px;
+        height: 1.5rem;
+        width: 2.75rem;
+    }
 
-<!-- styles must be added to component which is using tailwind classes -->
-<!-- <style global lang="postcss">
-    @tailwind base;
-    @tailwind components;
-    @tailwind utilities;
-</style>  -->
+    :global(.switch-enabled) {
+        /* Blue */
+        background-color: rgb(37 99 235);
+    }
+
+    :global(.switch-disabled) {
+        /* Gray */
+        background-color: rgb(229 231 235);
+    }
+
+    .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border-width: 0;
+    }
+
+    .toggle {
+        display: inline-block;
+        width: 1rem;
+        height: 1rem;
+        background-color: rgb(255 255 255);
+        border-radius: 9999px;
+    }
+
+    .toggle-on {
+        transform: translateX(1.1rem);
+    }
+
+    .toggle-off {
+        transform: translateX(-0.25rem);
+    }
+</style>
