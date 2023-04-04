@@ -12,8 +12,6 @@
         Input,
         Text,
         Timeline,
-        Center,
-        Image
     } from "@svelteuidev/core";
 
     import { primaryColor, secondaryColor } from "../../../store/stores";
