@@ -5,6 +5,7 @@
     import "../app.css";
     // import "agnostic-svelte/css/common.min.css";
 
+
     let showSidebar = false;
     const nav = [
         { title: "Home", path: "/" },
@@ -18,6 +19,15 @@
         console.log(showSidebar);
     }
 </script>
+
+<!-- For overriding styles in hole project with sveltestrap/bootstrap styles
+    if this isnt there it is not manageble to use all the different UI-Libraries in one Project without 
+    of css conflicts
+-->
+<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+/>
 
 <iconify-icon
     icon="mdi:menu"
