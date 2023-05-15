@@ -13,6 +13,8 @@
     import DaisyUI from "../Frameworks/DaisyUI/DaisyUI.svelte";
     import CarbonComponents from "../Frameworks/CarbonComponents/CarbonComponents.svelte";
     import AgnosticUI from "../Frameworks/AgnosticUI/AgnosticUI.svelte";
+    import Attractions from "../Frameworks/Attractions/Attractions.svelte";
+    
     let columnItems = [
         {
             id: 1,
@@ -39,11 +41,11 @@
             name: "Sveltestrap",
             component: SvelteStrap,
         },
-        // {
-        //     id: 6,
-        //     name: "Attractions",
-        //     component: TestComponent,
-        // },
+        {
+            id: 6,
+            name: "Attractions",
+            component: Attractions,
+        },
         // {
         //     id: 7,
         //     name: "Smelter",
