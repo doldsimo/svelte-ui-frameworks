@@ -1,7 +1,12 @@
 <script>
     // @ts-nocheck
     import Dialog from "./Dialog/Dialog.svelte";
-    import { Switch } from "@rgossiaux/svelte-headlessui";
+    import Menu from "./Menu/Menu.svelte";
+    import RadioButton from "./RadioButton/RadioButton.svelte";
+    import Switch from "./Switch/Switch.svelte";
+    import Tabs from "./Tabs/Tabs.svelte";
+    import Disclosure from "./Disclosure/Disclosure.svelte";
+
     import { primaryColor, secondaryColor } from "../../../store/stores";
 
     let colorP;
@@ -28,24 +33,26 @@
         >
     </div>
     <div class="sub-container-button">
-        <Switch
-            checked={enabled}
-            on:change={(e) => (enabled = e.detail)}
-            class={enabled ? "switch switch-enabled" : "switch switch-disabled"}
-        >
-            <span class="sr-only">Enable notifications</span>
-            <span
-                class="toggle"
-                class:toggle-on={enabled}
-                class:toggle-off={!enabled}
-            />
-        </Switch>
+        <Switch/>
+    </div>
+
+    <div class="sub-container-button"   style="width: 100%; height: 100%; margin-top: 1em; margin-bottom: 1em">
+        <RadioButton />
+    </div>
+
+    <div class="sub-container-button" style="width: 100%; height: 100%; margin-top: 1em; margin-bottom: 1em">
+        <Tabs/>
+    </div>
+    <div class="sub-container-button">
+        <Disclosure/>
     </div>
 
     <div class="sub-container-button">
-        <Dialog />
+        <Dialog/>
     </div>
+
 </div>
+
 
 <style>
     :global(.switch) {
