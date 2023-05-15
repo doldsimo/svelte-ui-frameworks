@@ -14,53 +14,57 @@
     import CarbonComponents from "../Frameworks/CarbonComponents/CarbonComponents.svelte";
     import AgnosticUI from "../Frameworks/AgnosticUI/AgnosticUI.svelte";
     import Attractions from "../Frameworks/Attractions/Attractions.svelte";
-    
-    let columnItems = [
+
+    let columnItems = [   
         {
             id: 1,
-            name: "Svelte Material UI",
-            component: SvelteMaterialUi,
+            name: "AgnosticUI",
+            component: AgnosticUI,
         },
         {
             id: 2,
-            name: "Svelte UI",
-            component: SvelteUI,
+            name: "Attractions",
+            component: Attractions,
         },
         {
             id: 3,
-            name: "Headless UI",
-            component: HeadlessUI,
+            name: "Carbon Components",
+            component: CarbonComponents,
         },
         {
             id: 4,
-            name: "Daisyui",
+            name: "daisyUi",
             component: DaisyUI,
         },
         {
             id: 5,
-            name: "Sveltestrap",
-            component: SvelteStrap,
+            name: "Headless UI",
+            component: HeadlessUI,
         },
         {
             id: 6,
-            name: "Attractions",
-            component: Attractions,
+            name: "Svelte Material UI",
+            component: SvelteMaterialUi,
         },
+        {
+            id: 7,
+            name: "Svelte UI",
+            component: SvelteUI,
+        }, 
+
+        {
+            id: 8,
+            name: "Sveltestrap",
+            component: SvelteStrap,
+        },
+       
         // {
         //     id: 7,
         //     name: "Smelter",
         //     component: TestComponent,
         // },
-        {
-            id: 8,
-            name: "Carbon Components",
-            component: CarbonComponents,
-        },
-        {
-            id: 9,
-            name: "AgnosticUI",
-            component: AgnosticUI,
-        },
+       
+     
     ];
 
     const flipDurationMs = 200;

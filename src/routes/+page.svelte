@@ -17,6 +17,33 @@
     >
     <ul>
         <li>
+            <a href="https://github.com/agnosticui/agnosticui" target="_blank"
+                >Agnosticui</a
+            >
+        </li>
+        <li>
+            <a href="https://github.com/illright/attractions" target="_blank"
+                >Attractions</a
+            >
+        </li>
+        <li>
+            <a
+                href="https://github.com/carbon-design-system/carbon-components-svelte"
+                target="_blank">Carbon Components</a
+            >
+        </li>
+        <li>
+            <a href="https://github.com/saadeghi/daisyui" target="_blank"
+                >daisyUI</a
+            >
+        </li>
+        <li>
+            <a
+                href="https://github.com/rgossiaux/svelte-headlessui"
+                target="_blank">Headless UI</a
+            >
+        </li>
+        <li>
             <a
                 href="https://github.com/hperrin/svelte-material-ui"
                 target="_blank">Svelte Material UI</a
@@ -27,43 +54,13 @@
                 >Svelte UI</a
             >
         </li>
-        <li>
-            <a
-                href="https://github.com/rgossiaux/svelte-headlessui"
-                target="_blank">Headless UI</a
-            >
-        </li>
-        <li>
-            <a href="https://github.com/saadeghi/daisyui" target="_blank"
-                >Daisyui</a
-            >
-        </li>
+       
+      
         <li>
             <a href="https://github.com/bestguy/sveltestrap" target="_blank"
                 >Sveltestrap</a
             >
-        </li>
-        <li>
-            <a href="https://github.com/illright/attractions" target="_blank"
-                >Attractions</a
-            >
-        </li>
-        <li>
-            <a href="https://github.com/matyunya/smelte" target="_blank"
-                >Smelter</a
-            >
-        </li>
-        <li>
-            <a
-                href="https://github.com/carbon-design-system/carbon-components-svelte"
-                target="_blank">Carbon Components</a
-            >
-        </li>
-        <li>
-            <a href="https://github.com/agnosticui/agnosticui" target="_blank"
-                >Agnosticui</a
-            >
-        </li>
+        </li> 
     </ul>
 
     <Text>
