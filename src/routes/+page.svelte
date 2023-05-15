@@ -18,7 +18,7 @@
     <ul>
         <li>
             <a href="https://github.com/agnosticui/agnosticui" target="_blank"
-                >Agnosticui</a
+                >AgnosticUI</a
             >
         </li>
         <li>
