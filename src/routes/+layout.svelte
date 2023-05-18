@@ -6,9 +6,9 @@
 
     let showSidebar = false;
     const nav = [
-        { title: "Home", path: "/" },
-        { title: "Component comparison", path: "/component-comparison" },
-        { title: "About", path: "/about" },
+        { title: "Home", path: "/svelte-ui-frameworks/" },
+        { title: "Component comparison", path: "/svelte-ui-frameworks/component-comparison" },
+        { title: "About", path: "/svelte-ui-frameworks/about" },
     ];
 
     function showHideMenue() {

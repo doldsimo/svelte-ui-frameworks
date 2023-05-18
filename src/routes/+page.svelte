@@ -76,7 +76,7 @@
     <br />
 
     <div style="display: flex; justify-content:space-around">
-        <Button on:click={() => goto("/component-comparison")}>
+        <Button on:click={() => goto("/svelte-ui-frameworks/component-comparison")}>
             Component comparison</Button
         >
     </div>

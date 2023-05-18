@@ -11,9 +11,9 @@ const config = {
 		/**prerender: {
 			entries: []
 		},*/
-		/**paths: {
+		paths: {
 			base: dev ? '' : '/svelte-ui-frameworks'
-		}*/
+		}
 	},
 	preprocess: vitePreprocess()
 };
