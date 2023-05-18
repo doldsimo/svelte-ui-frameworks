@@ -13,7 +13,7 @@
     >
 
     <Text root="p"
-        >This sample app compares nine sample Svelte UI-Frameworks. These are:</Text
+        >This sample app compares eight sample Svelte UI-Frameworks. <br/> These are:</Text
     >
     <ul>
         <li>
@@ -76,9 +76,6 @@
     <br />
 
     <div style="display: flex; justify-content:space-around">
-        <Button on:click={() => goto("/live-example")} color="green"
-            >Live example</Button
-        >
         <Button on:click={() => goto("/component-comparison")}>
             Component comparison</Button
         >

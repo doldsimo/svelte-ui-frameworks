@@ -1,6 +1,5 @@
 <script>
     import ContainerSidbebar from "../components/ContainerSidbebar/ContainerSidbebar.svelte";
-    import Footer from "../components/Footer/Footer.svelte";
     import "iconify-icon";
     import "../app.css";
     import "agnostic-svelte/css/common.min.css";
@@ -9,7 +8,6 @@
     const nav = [
         { title: "Home", path: "/" },
         { title: "Component comparison", path: "/component-comparison" },
-        { title: "Live example", path: "/live-example" },
         { title: "About", path: "/about" },
     ];
 
@@ -41,4 +39,3 @@
     <!-- slot is standing for rendering the page content -->
     <slot />
 </main>
-<!-- <Footer/> -->
