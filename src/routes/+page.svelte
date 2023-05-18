@@ -11,9 +11,9 @@
     <Title order={1} weight={"bold"} root="h1"
         >Svelte UI-Frameworks comparison</Title
     >
-
+    <br/> 
     <Text root="p"
-        >This sample app compares eight sample Svelte UI-Frameworks. <br/> These are:</Text
+        >This sample app compares eight sample Svelte UI-Frameworks. These are:</Text
     >
     <ul>
         <li>
