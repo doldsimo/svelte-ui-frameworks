@@ -6,7 +6,7 @@
 
     let showSidebar = false;
     const nav = [
-        { title: "Home", path: "/svelte-ui-frameworks/" },
+        { title: "Home", path: "/svelte-ui-frameworks/home" },
         { title: "Component comparison", path: "/svelte-ui-frameworks/component-comparison" },
         { title: "About", path: "/svelte-ui-frameworks/about" },
     ];

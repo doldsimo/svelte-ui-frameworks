@@ -1,5 +1,6 @@
 import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/kit/vite';
+import sveltePreprocess from 'svelte-preprocess';
 
 // setting build for gh-pages or dev for development
 const dev = false;
@@ -15,7 +16,7 @@ const config = {
 			base: dev ? '' : '/svelte-ui-frameworks'
 		}
 	},
-	preprocess: vitePreprocess()
+	preprocess: [vitePreprocess(), sveltePreprocess()]
 };
 
 export default config;
