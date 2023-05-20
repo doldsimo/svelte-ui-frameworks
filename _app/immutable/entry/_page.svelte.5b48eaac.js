@@ -1,0 +1,1 @@
+import{S as t,i as n,s as o}from"../chunks/index.1c27a992.js";function a(e){return window.location.href="/svelte-ui-frameworks/home",[]}class i extends t{constructor(s){super(),n(this,s,a,null,o,{})}}export{i as default};
