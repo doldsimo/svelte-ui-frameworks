@@ -106,7 +106,7 @@
             isInline
             options={[
                 {
-                    label: "On",
+                    label: "Check me",
                 },
             ]}
         />

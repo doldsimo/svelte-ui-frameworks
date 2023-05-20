@@ -16,7 +16,7 @@ const config = {
 			base: dev ? '' : '/svelte-ui-frameworks'
 		}
 	},
-	preprocess: [vitePreprocess(), sveltePreprocess()]
+	preprocess: [sveltePreprocess(), vitePreprocess()]
 };
 
 export default config;
