@@ -1,4 +1,4 @@
-# Comparison of Svelte UI Libraries/Frameworks
+# Comparison of Svelte and SvelteKit UI Libraries/Frameworks
 
 check out the [live demo](https://doldsimo.github.io/svelte-ui-frameworks/home)
 
