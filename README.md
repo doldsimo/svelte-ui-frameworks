@@ -1,38 +1,17 @@
-# create-svelte
+# Comparison of Svelte UI Libraries/Frameworks
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+check out the [live demo](https://doldsimo.github.io/svelte-ui-frameworks/home)
 
-## Creating a project
+This sample app compares eight sample Svelte UI Frameworks/Library. These are:
 
-If you're seeing this, you've probably already done this step. Congrats!
+- [AgnosticUI](https://github.com/agnosticui/agnosticui)
+- [Attractions](https://github.com/illright/attractions)
+- [Carbon Components](https://github.com/carbon-design-system/carbon-components-svelte)
+- [daisyUI](https://github.com/saadeghi/daisyui)
+- [Headless UI](https://github.com/rgossiaux/svelte-headlessui)
+- [Svelte Material UI](https://github.com/hperrin/svelte-material-ui)
+- [Svelte UI](https://github.com/svelteuidev/svelteui)
+- [Sveltestrap](https://github.com/bestguy/sveltestrap)
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+Since all Libraries/Frameworks have a different number of components, the most important ones have been selected in this example and compared with each other. For a complete list of components, visit the website of the respective framework.
+It is recommended to view the website on a device with a larger screen so that the frameworks can be better compared with each other.
